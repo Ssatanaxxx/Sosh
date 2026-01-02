@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../frontend/src/styles/fonts.scss","../frontend/src/components/ui-kit/UILink/UILink.module.scss","../frontend/src/styles/colors.scss"],"names":[],"mappings":"AAAA;EACE;EACA,KACE;EAGF;EACA;;AAGF;EACE;EACA,KACE;EAGF;EACA;;AAGF;EACE;EACA,KACE;EAGF;EACA;;ACxBF;EACE;EACA;EACA,OCHc;EDId;;AAEA;EACE,OCNY;EDOZ","file":"UILink.module.css"}

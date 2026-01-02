@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 612px;
+  padding: 40px;
+  gap: 24px;
+  background-color: #fefeff;
+  border-radius: 20px;
+}
+.form__title {
+  text-align: left;
+  color: #001ca9;
+  margin: 0;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+.form__content {
+  display: flex;
+  gap: 16px;
+}
+.form__devider {
+  width: 1px;
+  height: 252px;
+  background-color: #ededed;
+}
+.form__inputSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 385px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.form__nameInputs, .form__contactInputs, .form__selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form__selectContainer {
+  position: relative;
+  width: 100%;
+  max-height: 46px;
+}
+.form__error {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #f11111;
+  margin-top: 8px;
+}
+.form__saveButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background-color: #001ca9;
+  box-shadow: 0 4px 15px 0 rgba(53, 94, 217, 0.1019607843);
+  color: #fefeff;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  font-weight: 500;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form__saveButton:hover {
+  background-color: #0b2fe1;
+}
+.form__saveButton:active {
+  background-color: #07165c;
+}
+.form__saveButton:disabled {
+  background-color: #ededed;
+  color: #a6a6a6;
+  cursor: auto;
+  box-shadow: none;
+}/*# sourceMappingURL=UserEditForm.module.css.map */

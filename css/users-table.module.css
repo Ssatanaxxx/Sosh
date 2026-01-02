@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.table__firstUserItem {
+  display: flex;
+  align-items: center;
+}
+.table__firstUserItem_avatar, .table__firstUserItem_icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.table__firstUserItem_icon {
+  background-color: #f6faff;
+  border: 1px solid #c5dcee;
+}
+.table__firstUserItem_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 10px;
+}
+.table__firstUserItem_last_name, .table__firstUserItem_name {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #404664;
+}
+.table__firstUserItem_name {
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 700;
+  text-align: left;
+}/*# sourceMappingURL=users-table.module.css.map */

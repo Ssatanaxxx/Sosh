@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.toggle_switch {
+  display: flex;
+}
+
+.toggle_checkbox {
+  display: none;
+}
+.toggle_checkbox:checked + .toggle_label {
+  background-color: #0f62fe;
+}
+.toggle_checkbox:checked + .toggle_label::after {
+  transform: translateX(18px);
+}
+
+.toggle_label {
+  display: inline-block;
+  width: 52px;
+  height: 32px;
+  background-color: #cddaf3;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.toggle_label::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 5px;
+  transition: transform 0.3s;
+}/*# sourceMappingURL=ToggleSwitch.module.css.map */

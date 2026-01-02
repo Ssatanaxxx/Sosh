@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.popup {
+  position: relative;
+  width: 100%;
+  max-width: 341px;
+}
+.popup__select, .popup__select_open {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #c5dcee;
+  padding: 12px;
+  width: 100%;
+  color: #5e5e63;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.popup__select {
+  border-radius: 12px;
+}
+.popup__select:hover {
+  opacity: 1;
+  box-shadow: 0 4px 68px 0 rgba(53, 94, 217, 0.2);
+}
+.popup__select_open {
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  opacity: 1;
+}
+.popup__selectIcon {
+  width: 18px;
+  height: 18px;
+}
+.popup__selectIcon_up {
+  transform: rotate(-90deg);
+}
+.popup__selectIcon_down {
+  transform: rotate(90deg);
+}
+.popup__text {
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfdff;
+  width: 100%;
+  max-width: 341px;
+  box-sizing: border-box;
+  border: 1px solid #c5dcee;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 12px;
+  position: absolute;
+  z-index: 1000;
+}/*# sourceMappingURL=PopupContainer.module.css.map */

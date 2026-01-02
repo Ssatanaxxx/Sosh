@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px 0 rgba(53, 94, 217, 0.1019607843);
+  max-width: 1547px;
+  height: 100%;
+}
+.table__header, .table__grouped_header {
+  background-color: #cbe8ff;
+}
+.table__header {
+  display: grid;
+  grid-template-columns: repeat(12, 120px);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  flex-shrink: 0;
+}
+.table__main_header, .table__group_main, .table__sub_header_main, .table__sub_header {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  border: 1px solid #c5dcee;
+  background-color: #cbe8ff;
+}
+.table__main_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table__main_header--1 {
+  grid-column: 1;
+}
+.table__main_header--2 {
+  grid-column: 2;
+}
+.table__main_header--3 {
+  grid-column: 3;
+}
+.table__main_header:first-child {
+  border-left: none;
+  border-top-left-radius: 20px;
+}
+.table__grouped_header {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4/span 9;
+  background-color: #cbe8ff;
+}
+.table__group_main {
+  padding: 8px 0;
+  border-bottom: 1px solid #c5dcee;
+  grid-column: 1/span 9;
+}
+.table__group_subheaders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+.table__sub_header_group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.table__sub_header_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #c5dcee;
+  border-left: 1px solid #c5dcee;
+  min-height: 36px;
+}
+.table__sub_header_subgroup {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  flex: 1;
+}
+.table__sub_header_group:last-child .table__sub_header_subgroup {
+  grid-template-columns: repeat(6, 120px);
+}
+.table__sub_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #c5dcee;
+  padding: 8px 12px;
+  min-height: 40px;
+}
+.table__body_container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 400px;
+}
+.table__body_container::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+}
+.table__body_container::-webkit-scrollbar-track {
+  background: #ededed;
+}
+.table__body_container::-webkit-scrollbar-thumb {
+  background: #9db5d8;
+  border-radius: 8px;
+}
+.table__body_container::-webkit-scrollbar-thumb:hover {
+  background: #cbe8ff;
+}
+.table__body {
+  display: flex;
+  flex-direction: column;
+}
+.table__row, .table__summary_row {
+  display: grid;
+  grid-template-columns: repeat(12, 120px);
+  border-bottom: 1px solid #c5dcee;
+  background-color: #fefeff;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.table__row:last-child, .table__summary_row:last-child {
+  border-bottom: none;
+}
+.table__row:last-child {
+  border-bottom: none;
+}
+.table__cell, .table__grouped_cell, .table__summary_cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #c5dcee;
+  color: #404664;
+  padding: 12px 0;
+  text-align: center;
+}
+.table__cell:first-child, .table__grouped_cell:first-child, .table__summary_cell:first-child {
+  border-left: none;
+  text-align: left;
+}
+.table__summary {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.table__summary_row {
+  font-weight: 700;
+}
+.table__summary_row:first-child {
+  border-top: 1px solid #c5dcee;
+}
+.table__summary_row:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.table__summary_cell {
+  padding: 6px 12px;
+}/*# sourceMappingURL=TableMissingReport.module.css.map */

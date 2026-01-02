@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.tooltip {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #5e5e63;
+  border-radius: 20px;
+  padding: 16px;
+  width: 300px;
+  z-index: 1000;
+  left: calc(100% + 16px);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transform: translateY(-50%) translateX(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  right: calc(100% - 6px);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-left: 2px solid #5e5e63;
+  border-bottom: 2px solid #5e5e63;
+}
+
+.tooltip__visible {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.tooltip__title {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  font-size: 14px;
+  color: #404664;
+  margin: 0 0 10px 0;
+}
+
+.tooltip__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tooltip__item {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  padding-left: 16px;
+  position: relative;
+}
+.tooltip__item:last-child {
+  margin-bottom: 0;
+}
+.tooltip__item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+.tooltip__container {
+  position: relative;
+  display: inline-block;
+}/*# sourceMappingURL=UITooltip.module.css.map */

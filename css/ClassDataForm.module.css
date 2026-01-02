@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.classDataForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.classDataForm__header {
+  margin-bottom: 24px;
+}
+.classDataForm__titleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.classDataForm__title {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #001ca9;
+}
+.classDataForm__date {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #07165c;
+}
+.classDataForm__teacher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #07165c;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0;
+  letter-spacing: 0.8px;
+}
+.classDataForm__teacher_name, .classDataForm__teacher_you {
+  font-weight: 700;
+}
+.classDataForm__teacher_you {
+  color: #9db5d8;
+}
+.classDataForm__reasons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 19px;
+}
+.classDataForm__comments {
+  position: relative;
+  width: 100%;
+}
+.classDataForm__comments_input {
+  border: 1px solid #c5dcee;
+  border-radius: 12px;
+  width: 100%;
+  min-height: 11vh;
+  padding: 32px 16px 20px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #404664;
+  resize: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.classDataForm__comments_input:focus ~ .classData__comments_label, .classDataForm__comments_input:not(:placeholder-shown) ~ .classDataForm__comments_label {
+  top: 20px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  transform: translateY(-50%);
+}
+.classDataForm__comments_input_error {
+  border-color: #f11111;
+}
+.classDataForm__comments_label {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #404664;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.classDataForm__comments_counter {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #5e5e63;
+}
+.classDataForm__comments_warning {
+  padding: 8px 0 0 16px;
+  color: #5e5e63;
+}
+.classDataForm__comments_warning_error {
+  color: #f11111;
+}
+.classDataForm__quarantine {
+  display: flex;
+}
+.classDataForm__quarantine_label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #404664;
+}
+.classDataForm__quarantine_label:hover {
+  color: #07165c;
+}
+.classDataForm__quarantine_label input:disabled + .classDataForm__quarantine_text {
+  cursor: default;
+  opacity: 0.6;
+  color: #404664;
+}
+.classDataForm__quarantine_checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #001ca9;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+}
+.classDataForm__quarantine_checkbox:checked {
+  background-color: #001ca9;
+}
+.classDataForm__quarantine_checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fefeff;
+}
+.classDataForm__quarantine_checkbox:focus {
+  outline: none;
+}
+.classDataForm__quarantine_checkbox:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.classDataForm__quarantine_text {
+  cursor: pointer;
+}
+.classDataForm__quarantineCheckbox:checked + .classDataForm__quarantine_text {
+  color: #07165c;
+}
+.classDataForm__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.classDataForm__footer_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 342px;
+  width: 100%;
+}/*# sourceMappingURL=ClassDataForm.module.css.map */

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.button {
+  padding: 18px;
+  border-radius: 12px;
+  color: #fefeff;
+  background-color: #001ca9;
+}
+.button:hover {
+  background-color: #0b2fe1;
+}
+.button:focus, .button:focus-visible {
+  background-color: #07165c;
+}
+.button:disabled {
+  color: #a6a6a6;
+  background-color: #ededed;
+  cursor: auto;
+}
+.button--bgless {
+  padding: 17px;
+  color: #001ca9;
+  border: 1px solid currentColor;
+  background: transparent;
+}
+.button--bgless:hover {
+  color: #0b2fe1;
+  background: transparent;
+}
+.button--bgless:focus, .button--bgless:focus-visible {
+  color: #07165c;
+  background: transparent;
+}
+.button--bgless:disabled {
+  color: #a6a6a6;
+  background: transparent;
+  cursor: auto;
+}/*# sourceMappingURL=UIButton.module.css.map */

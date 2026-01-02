@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.modal {
+  border-radius: 20px;
+  padding: 0;
+}
+.modal__CloseBtn {
+  position: absolute;
+  top: 41px;
+  right: 34px;
+  z-index: 1001;
+}
+.modal__CloseBtn_delete {
+  top: 19px;
+  right: 13px;
+  z-index: 1001;
+}/*# sourceMappingURL=ClassesPageModal.module.css.map */

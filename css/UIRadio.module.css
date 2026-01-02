@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.radio {
+  display: flex;
+  padding-left: 50px;
+  user-select: none;
+}
+.radio__field {
+  position: relative;
+  padding-left: 10px;
+  margin: 10px;
+  appearance: none;
+  cursor: pointer;
+}
+.radio__field::before, .radio__field::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.radio__field::before {
+  left: -5px;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #001ca9;
+  transition: border-color 0.3s ease-in-out;
+}
+.radio__field::after {
+  left: 0px;
+  top: -3px;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  background-color: #001ca9;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.radio__field:checked::after {
+  opacity: 1;
+}
+.radio__field:hover::before, .radio__field:focus-visible::before {
+  border-color: #0b2fe1;
+}
+.radio__field:hover::after, .radio__field:focus-visible::after {
+  background-color: #0b2fe1;
+}
+.radio__field:hover + .radio__label, .radio__field:focus-visible + .radio__label {
+  color: #0b2fe1;
+}
+.radio__label {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}/*# sourceMappingURL=UIRadio.module.css.map */

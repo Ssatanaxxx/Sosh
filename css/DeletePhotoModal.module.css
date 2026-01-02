@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.form__deleteModal {
+  border-radius: 20px;
+  padding: 0;
+}
+.form__modalCloseBtn {
+  top: 20px;
+  right: 20px;
+}
+.form__modalDelBox {
+  padding: 40px 44px;
+  width: 524px;
+  height: 218px;
+}
+.form__modalParagraph {
+  display: block;
+  text-align: center;
+  padding-top: 6px;
+  margin-bottom: 28px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+.form__modalBtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.form__modalBtn {
+  width: 48%;
+  height: max-content;
+  padding: 10px 0;
+}
+.form__modalBtn:first-child {
+  background-color: transparent;
+  border: 1px solid #001ca9;
+  color: #001ca9;
+}/*# sourceMappingURL=DeletePhotoModal.module.css.map */

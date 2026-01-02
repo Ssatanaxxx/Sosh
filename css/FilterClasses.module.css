@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.filter {
+  color: #404664;
+}
+.filter__search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.filter__searchInput {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #c5dcee;
+  border-radius: 12px;
+  padding: 13px 8px 13px 16px;
+}
+.filter__searchInput::placeholder {
+  color: #5e5e63;
+  opacity: 0.6;
+}
+.filter__searchInput:focus {
+  border-color: #0f62fe;
+  outline: none;
+}
+.filter__searchInput__search {
+  position: relative;
+  margin-bottom: 16px;
+}
+.filter__searchInput__searchInput {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.filter__searchInput__searchIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+.filter__searchInput__groups {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+.filter__searchInput__groupItem {
+  margin-bottom: 8px;
+}
+.filter__searchInput__groupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+.filter__searchInput__expandButton {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.filter__searchInput__classesList {
+  margin-left: 20px;
+  border-left: 2px solid #eee;
+  padding-left: 12px;
+}
+.filter__searchInput__classItem {
+  padding: 4px 0;
+}
+.filter__searchInput__buttonReset, .filter__searchInput__buttonApply {
+  flex: 1;
+}
+.filter__searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.filter__allClasses {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.filter__grades {
+  display: flex;
+  flex-direction: column;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.filter__grades::-webkit-scrollbar {
+  width: 6px;
+}
+.filter__grades::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+.filter__grades::-webkit-scrollbar-thumb {
+  background: #9db5d8;
+  border-radius: 3px;
+}
+.filter__gradeItem {
+  margin-bottom: 8px;
+}
+.filter__label_level_1 .container {
+  padding-left: 12px;
+}
+.filter__label_level_2 .container {
+  padding-left: 24px;
+}
+.filter__label_level_3 .container {
+  padding-left: 36px;
+}
+.filter__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 16px 4px 10px;
+}
+.filter__buttonReset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  border: 1px solid #001ca9;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #001ca9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.filter__buttonReset:hover {
+  background-color: #fff;
+  border: 1px solid #0b2fe1;
+  color: #0b2fe1;
+}
+.filter__buttonReset:active {
+  background-color: #fff;
+  border: 1px solid #07165c;
+  color: #07165c;
+}
+.filter__buttonApply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  background-color: #001ca9;
+  color: #fefeff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.filter__buttonApply:hover {
+  background-color: #0b2fe1;
+}
+.filter__buttonApply:active {
+  background-color: #07165c;
+}/*# sourceMappingURL=FilterClasses.module.css.map */

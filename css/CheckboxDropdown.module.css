@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.menu__dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 4px;
+  margin: 0;
+}
+.menu__dropdown_item {
+  margin-bottom: 12px;
+  width: 100%;
+}
+.menu__dropdown_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+.menu__dropdown_reset {
+  width: 50%;
+  height: 40px;
+  padding: 9px 20px;
+  border-radius: 12px;
+  background-color: #fefeff;
+  border: 1px solid #001ca9;
+  color: #001ca9;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.menu__dropdown_reset:hover {
+  background-color: #fff;
+  border: 1px solid #0b2fe1;
+  color: #0b2fe1;
+}
+.menu__dropdown_reset:active {
+  background-color: #fff;
+  border: 1px solid #07165c;
+  color: #07165c;
+}
+.menu__dropdown_apply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  background-color: #001ca9;
+  color: #fefeff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menu__dropdown_apply:hover {
+  background-color: #0b2fe1;
+}
+.menu__dropdown_apply:active {
+  background-color: #07165c;
+}/*# sourceMappingURL=CheckboxDropdown.module.css.map */

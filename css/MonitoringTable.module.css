@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: auto;
+}
+.table__row {
+  list-style-type: none;
+  display: flex;
+  border-bottom: 1px solid #c5dcee;
+}
+.table__row_selected {
+  outline: none;
+  box-shadow: 0 1px 9px 0 rgba(76, 76, 76, 0.2) inset;
+  transition: all 0.1s ease-in;
+}
+.table__row_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  border-left: 1px solid #c5dcee;
+  padding: 13px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #404664;
+}
+.table[data-page="/monitoring"] .table__row_title {
+  justify-content: center;
+  text-align: center;
+}
+.table__quarantine_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.table__header {
+  display: flex;
+  text-align: center;
+  padding: 0 8px 0 0;
+  margin: 0;
+  background-color: #cbe8ff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.table__header_title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  flex: 1;
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  border-left: 1px solid #dde1e6;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-align: start;
+}
+.table__header_title:hover {
+  background: #9db5d8;
+  cursor: pointer;
+}
+.table__header_title:nth-last-of-type(1) span {
+  display: none;
+}
+.table__header_title:first-child {
+  border-top-left-radius: 20px;
+}
+
+.table__body {
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+.table__body::-webkit-scrollbar {
+  width: 8px;
+  /* Ширина скролла */
+  border-radius: 8px;
+}
+.table__body::-webkit-scrollbar-track {
+  background: #efefef;
+  /* Цвет фона трека */
+  border-bottom-right-radius: 20px;
+}
+.table__body::-webkit-scrollbar-thumb {
+  background: #cbe8ff;
+  /* Цвет ползунка */
+  border-radius: 8px;
+  /* Скругление ползунка */
+}
+.table__body::-webkit-scrollbar-thumb:hover {
+  background: #9db5d8;
+  /* Цвет ползунка при наведении */
+}
+
+.scroll_bar_none {
+  overflow-y: scroll; /* Обеспечивает прокрутку */
+}
+.scroll_bar_none::-webkit-scrollbar {
+  display: none; /* Скрывает скроллбар */
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #404664;
+  transition: transform 0.3s ease;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=MonitoringTable.module.css.map */

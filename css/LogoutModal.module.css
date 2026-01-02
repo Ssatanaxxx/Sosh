@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.logoutModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 484px;
+  margin-top: 32px;
+}
+.logoutModal__title {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: #404664;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.logoutModal__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  width: 100%;
+}
+.logoutModal__btn {
+  width: 50%;
+  height: 40px;
+  padding: 0;
+}
+.logoutModal__btnСencel {
+  width: 50%;
+  height: 40px;
+  padding: 0;
+  background-color: #fbfdff;
+  border: 1px solid #001ca9;
+  color: #001ca9;
+}
+.logoutModal__btnСencel:hover {
+  color: #0b2fe1;
+  background-color: transparent;
+}/*# sourceMappingURL=LogoutModal.module.css.map */

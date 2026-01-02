@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.userCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 0;
+}
+.userCard__wrapper {
+  display: flex;
+}
+.userCard__img_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 50%;
+  background-color: #f6faff;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+.userCard__last_name {
+  margin: 0;
+  width: 50%;
+  color: #404664;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+.userCard__name {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.userCard__roleBtn {
+  margin-top: 10px;
+  margin-left: 8%;
+}
+
+.userCard:hover {
+  background-color: #cbe8ff;
+}
+
+.userCard:active {
+  background-color: #cbe8ff;
+}/*# sourceMappingURL=UserCard.module.css.map */

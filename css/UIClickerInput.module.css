@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.uiClickerInput {
+  display: flex;
+  align-items: center;
+  min-width: 70px;
+  max-width: 70px;
+  position: relative;
+  height: 44px;
+}
+.uiClickerInput__input {
+  width: 100%;
+  border: 1px solid #c5dcee;
+  border-radius: 8px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  color: #07165c;
+  outline: none;
+  height: 100%;
+}
+.uiClickerInput__buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.uiClickerInput__button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  height: 12px;
+  cursor: pointer;
+}
+.uiClickerInput__button:disabled {
+  opacity: 0.6;
+  cursor: auto;
+}
+.uiClickerInput__arrowIcon_right {
+  transform: rotate(90deg);
+}
+.uiClickerInput__arrowIcon_left {
+  transform: rotate(-90deg);
+}/*# sourceMappingURL=UIClickerInput.module.css.map */

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.monthSwitcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 218px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #c5dcee;
+  border-radius: 12px;
+}
+.monthSwitcher__label {
+  color: #404664;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: left;
+}
+.monthSwitcher__label::first-letter {
+  text-transform: uppercase;
+}
+.monthSwitcher__navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+.monthSwitcher__navButton_left {
+  transform: rotate(90deg);
+  padding-bottom: 12px;
+}
+.monthSwitcher__navButton_right {
+  transform: rotate(-90deg);
+  padding-bottom: 12px;
+}
+.monthSwitcher__navButton:hover {
+  color: #212529;
+}
+.monthSwitcher__navButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}/*# sourceMappingURL=MonthSwitcher.module.css.map */

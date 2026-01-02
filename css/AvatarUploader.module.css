@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.form__imageLoader {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 200px;
+}
+.form__photoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 115px;
+  border: 1px solid #9db5d8;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f6faff;
+  color: #9db5d8;
+}
+.form__image {
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+.form__image path {
+  fill: currentColor;
+}
+.form__btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form__addButton {
+  border: 1px solid #001ca9;
+  border-radius: 12px;
+  background-color: #fefeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 30px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #001ca9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form__addButton:hover {
+  border: 1px solid #0b2fe1;
+  color: #fefeff;
+}
+.form__addButton:active {
+  border: 1px solid #07165c;
+  color: #fefeff;
+}
+.form__deleteButton {
+  border: none;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 30px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #001ca9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.form__deleteButton:hover {
+  color: #0b2fe1;
+}
+.form__deleteButton:active {
+  color: #07165c;
+}
+.form__deleteButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.form__deleteButton:disabled:hover {
+  color: initial;
+}
+.form__error {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #f11111;
+  margin-top: 8px;
+}/*# sourceMappingURL=AvatarUploader.module.css.map */

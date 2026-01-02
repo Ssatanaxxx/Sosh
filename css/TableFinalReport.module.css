@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px 0 rgba(53, 94, 217, 0.1019607843);
+}
+.table__header {
+  display: grid;
+  grid-template-columns: 140px 120px 120px 120px 120px 120px 120px repeat(6, 120px);
+  background-color: #cbe8ff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.table__main_header {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 0 12px;
+  border-left: 1px solid #c5dcee;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.table__main_header--1 {
+  grid-column: 1;
+}
+.table__main_header--2 {
+  grid-column: 2;
+}
+.table__main_header--3 {
+  grid-column: 3;
+}
+.table__main_header--4 {
+  grid-column: 4;
+}
+.table__main_header--5 {
+  grid-column: 5;
+}
+.table__main_header--6 {
+  grid-column: 6;
+}
+.table__main_header--7 {
+  grid-column: 7;
+}
+.table__main_header:first-child {
+  border-left: none;
+  border-top-left-radius: 20px;
+  justify-content: flex-start;
+}
+.table__main_header:last-child {
+  border-right: 1px solid #c5dcee;
+}
+.table__grouped_header {
+  display: flex;
+  flex-direction: column;
+  background-color: #cbe8ff;
+  grid-column: 8/span 6;
+  grid-row: 1/span 2;
+}
+.table__group_main {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 8px 0;
+  text-align: center;
+  border-bottom: 1px solid #c5dcee;
+  background-color: #cbe8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table__group_subheaders {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+}
+.table__sub_header {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  border-left: 1px solid #c5dcee;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  width: 120px;
+  box-sizing: border-box;
+}
+.table__body {
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow-y: auto;
+  max-height: 600px;
+}
+.table__body::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+}
+.table__body::-webkit-scrollbar-track {
+  background: #ededed;
+  border-bottom-right-radius: 20px;
+}
+.table__body::-webkit-scrollbar-thumb {
+  background: #cbe8ff;
+  border-radius: 8px;
+}
+.table__body::-webkit-scrollbar-thumb:hover {
+  background: #9db5d8;
+}
+.table__row {
+  display: grid;
+  grid-template-columns: 140px 120px 120px 120px 120px 120px 120px repeat(6, 120px);
+  border-bottom: 1px solid #c5dcee;
+  background-color: #fefeff;
+}
+.table__row:last-child {
+  border-bottom: none;
+}
+.table__row:last-child .table__cell:first-child {
+  border-bottom-left-radius: 20px;
+}
+.table__row:last-child .table__grouped_cell:last-child {
+  border-bottom-right-radius: 20px;
+}
+.table__cell {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 16px 8px;
+  border-left: 1px solid #c5dcee;
+  color: #404664;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table__cell:first-child {
+  border-left: none;
+}
+.table__grouped_cell {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 16px 8px;
+  border-left: 1px solid #c5dcee;
+  color: #404664;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__container {
+  overflow-x: auto;
+  border-radius: 20px;
+  margin-top: 16px;
+}
+.table__container::-webkit-scrollbar {
+  height: 8px;
+}
+.table__container::-webkit-scrollbar-track {
+  background: #ededed;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+.table__container::-webkit-scrollbar-thumb {
+  background: #cbe8ff;
+  border-radius: 8px;
+}
+.table__container::-webkit-scrollbar-thumb:hover {
+  background: #9db5d8;
+}/*# sourceMappingURL=TableFinalReport.module.css.map */

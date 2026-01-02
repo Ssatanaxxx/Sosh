@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.uiInputField {
+  box-sizing: border-box;
+  position: relative;
+  height: 70px;
+  color: #404664;
+  background: #fefeff;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.uiInputField__input {
+  padding: 26px 48px 10px 16px;
+  margin: 0;
+  border: 1px solid #cddaf3;
+  border-radius: 12px;
+  outline: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.uiInputField__input:focus {
+  border-color: #0059e9;
+}
+.uiInputField.hasError .uiInputField__input {
+  border-color: #d70015;
+  background-color: #f5e1e3;
+  color: #d70015;
+}
+.uiInputField.hasError .uiInputField__label,
+.uiInputField.hasError .uiInputField__btn,
+.uiInputField.hasError .uiInputField__icon {
+  color: #d70015;
+}
+.uiInputField__label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a6a6a6;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  font-size: 16px;
+  line-height: 120%;
+}
+.uiInputField__labelFloat {
+  font-size: 12px;
+  transform: translateY(-16px);
+  top: 16px;
+  color: #404664;
+}
+.uiInputField.hasError .uiInputField__labelFloat {
+  color: #d70015;
+}
+.uiInputField__btn {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  background: transparent;
+  transform: translateY(-50%);
+}
+.uiInputField__icon {
+  display: flex;
+  color: inherit;
+  fill: none;
+  transition: color 0.3s ease-in-out;
+}
+.uiInputField__errorMessage {
+  position: absolute;
+  bottom: -18px;
+  left: 5px;
+  display: flex;
+  flex-flow: column;
+  font-size: 10px;
+  gap: 5px;
+  color: #d70015;
+}
+
+.uiInputField__input::-ms-reveal, .uiInputField__input::-ms-clear, .uiInputField__input::-webkit-clear-button, .uiInputField__input::-webkit-textfield-decoration-container, .uiInputField__input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}/*# sourceMappingURL=UIInputField.module.css.map */

@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+}
+.logo_blue .logo__link {
+  color: #001ca9;
+}
+.logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fefeff;
+}/*# sourceMappingURL=SCLogo.module.css.map */

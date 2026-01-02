@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../frontend/src/styles/fonts.scss","../frontend/src/components/UsersPageModal/UsersPageModal.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA,KACE;EAGF;EACA;;AAGF;EACE;EACA,KACE;EAGF;EACA;;AAGF;EACE;EACA,KACE;EAGF;EACA;;ACxBF;EACE;EACA;;AAEA;EACE;EACA;;AAEA;EACE;EACA","file":"UsersPageModal.module.css"}

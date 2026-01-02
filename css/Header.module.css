@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.header {
+  display: flex;
+  justify-content: right;
+  background: #f6faff;
+}
+.header__container {
+  padding: 30px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.header__container_not_column {
+  flex-direction: row;
+}
+.header__titleWrapper {
+  margin-bottom: 20px;
+}
+.header__title {
+  grid-area: title;
+  color: #001ca9;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.header__selects_block {
+  grid-area: filters;
+  display: flex;
+  justify-content: space-between;
+}
+.header__dateWrapper {
+  display: flex;
+  max-width: 1065px;
+}
+.header__date {
+  margin-left: auto;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: 0.28px;
+}
+.header__teacher {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #07165c;
+}
+.header__teacherName {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.header__teacherYou {
+  opacity: 0.4;
+}
+
+.hidden {
+  display: none;
+}
+
+.header__users {
+  height: 13vh;
+}
+
+.switcher_margin {
+  margin-left: auto;
+}/*# sourceMappingURL=Header.module.css.map */

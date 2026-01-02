@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.classHistory {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 289px);
+  gap: 20px;
+  color: #404664;
+  background-color: #f6faff;
+}
+.classHistory__header {
+  margin-bottom: 24px;
+}
+.classHistory__titleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.classHistory__title {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #001ca9;
+}
+.classHistory__teacher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #07165c;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0;
+  letter-spacing: 0.8px;
+}
+.classHistory__teacher_name, .classHistory__teacher_you {
+  font-weight: 700;
+}
+.classHistory__teacher_you {
+  color: #9db5d8;
+}
+.classHistory__chartDonut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgba(53, 94, 217, 0.1019607843);
+  background: #fefeff;
+  padding: 32px 20px;
+}
+.classHistory__chartDonut_title {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+.classHistory__chartDonut_additionalStats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  margin-top: 16px;
+}
+.classHistory__chartDonut_statContainer {
+  display: flex;
+  gap: 8px;
+}
+.classHistory__chartDonut_statContainer_single {
+  flex: 1;
+}
+.classHistory__chartDonut_statItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eff3fc;
+  padding: 12px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 0;
+}
+.classHistory__chartDonut_statLabel {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+.classHistory__chartDonut_statValue {
+  font-weight: 700;
+}
+.classHistory__chartDonut_comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: #f6faff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 249px;
+}
+.classHistory__chartDonut_commentIcon {
+  flex-shrink: 0;
+}
+.classHistory__chartDonut_commentText {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  word-wrap: break-word;
+  word-break: break-word;
+  flex: 1;
+  margin: 0;
+}
+.classHistory__chartDonut_commentText_empty {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #a6a6a6;
+}
+.classHistory__noData {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  margin: auto;
+}
+.classHistory__noData_title {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+}
+.classHistory__noData_text {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}/*# sourceMappingURL=ClassHistoryData.module.css.map */

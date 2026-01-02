@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.stub {
+  max-width: 1065px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 68px 0 rgba(53, 94, 217, 0.2);
+  background: #fefeff;
+}
+.stub__text {
+  width: 582px;
+  height: 82px;
+}
+.stub__title {
+  width: 582px;
+  height: 46px;
+  margin-top: 1.56vw;
+  text-align: center;
+  color: #001ca9;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  line-height: 0;
+}
+.stub__description {
+  width: 535px;
+  height: 28px;
+  margin-left: 25px;
+  text-align: center;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 0%;
+  letter-spacing: 0.001px;
+  color: #404664;
+}/*# sourceMappingURL=Stub.module.css.map */

@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.faqItem {
+  padding: 42px;
+  border: 1px solid #c5dcee;
+  border-radius: 12px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  letter-spacing: 0;
+  color: #404664;
+  background: #fbfdff;
+  cursor: pointer;
+  user-select: none;
+}
+.faqItem__item {
+  display: flex;
+  justify-content: space-between;
+}
+.faqItem__hiddenItem {
+  margin-top: 60px;
+}
+.faqItem__text {
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  padding: 20px;
+}
+.faqItem__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faqItem__icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.faqItem__icon--rotated {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=FAQItem.module.css.map */

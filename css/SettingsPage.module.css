@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Regular.woff2") format(woff2), url("/fonts/Manrope-Regular.woff") format(woff);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Medium.woff2") format(woff2), url("/fonts/Manrope-Medium.woff") format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: local("Manrope"), url("/fonts/Manrope-Bold.woff2") format(woff2), url("/fonts/Manrope-Bold.woff") format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+.settingsPage {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100%;
+}
+.settingsPage__container {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+  padding: 24px 40px;
+  overflow: auto;
+}/*# sourceMappingURL=SettingsPage.module.css.map */
